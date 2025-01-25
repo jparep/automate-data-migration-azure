@@ -26,3 +26,7 @@ except Exception as e:
     print(f"Container '{container_name}' already exists or could not be created. Error: {e}")
     
 # Upload the file to the container
+blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
+with open(local_file_path, "rb") as data:
+    blob_client.upload_blob(data, overwrite=True)
+    print(f"File '{local_file_path}' uploaded to container '{container_name}' as blob '{blob_name}'.")
