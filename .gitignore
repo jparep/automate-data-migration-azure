@@ -1,0 +1,36 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+.env.local
+
+# Ignore build output directories
+dist/
+build/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore Azure specific files
+*.azure
+*.azureconfig
+
+# Ignore sensitive data files
+*.key
+*.pem
+*.pfx
+
+# Ignore backup files
+*.bak
+*.old
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Data
