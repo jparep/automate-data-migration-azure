@@ -11,3 +11,9 @@ connection_string = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
 
 # Use the connection string to create a BlobServiceClient
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
+
+
+# Container and Blob names
+container_name = "health-data-container"
+blob_name = "health-data.csv"
+local_file_path = "./data/health-data.csv"
