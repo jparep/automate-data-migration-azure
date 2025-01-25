@@ -4,7 +4,7 @@ This project automates the process of migrating data to Azure Blob Storage. The 
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.11
 - Azure Storage Account
 - Azure Storage Blob SDK for Python
 
@@ -12,7 +12,7 @@ This project automates the process of migrating data to Azure Blob Storage. The 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/automate-data-migration-azure.git
+    git clone https://github.com/jparep/automate-data-migration-azure.git
     cd automate-data-migration-azure
     ```
 
