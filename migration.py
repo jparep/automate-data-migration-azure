@@ -17,3 +17,12 @@ blob_service_client = BlobServiceClient.from_connection_string(connection_string
 container_name = "health-data-container"
 blob_name = "health-data.csv"
 local_file_path = "./data/health-data.csv"
+
+# Ensure the container exists
+try:
+    container_client = blob_service_client.create_container(container_name)
+    print(f"Container '{container_name}' created.")
+except Exception as e:
+    print(f"Container '{container_name}' already exists or could not be created. Error: {e}")
+    
+# Upload the file to the container
