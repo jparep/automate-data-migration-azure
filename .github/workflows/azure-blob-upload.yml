@@ -28,6 +28,6 @@ jobs:
 
     - name: Upload File to Azure Blob Storage
       env:
-        AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+        AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING || '' }}
       run: |
         python migration.py
