@@ -34,8 +34,8 @@ build/
 Thumbs.db
 
 # Ignore Data
-data/
-*.csv
+!data/
+!*.csv
 *.json
 *.xml
 *.excel
